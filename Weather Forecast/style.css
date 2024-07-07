@@ -1,0 +1,166 @@
+body{
+    background-image: url(/images/Design.png);
+    background-position:center;
+    background-size: cover;
+    margin: 0;
+    font-family: "Montserrat";    
+    height: 100vh;
+}
+.cards{
+    background-color: rgba(221, 221, 221, 0.2);
+    border-radius:10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 35px auto;
+    text-align: center;
+    max-width: 600px;
+    overflow: hidden;
+    width: 80%;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom:20px ;
+}
+#city{
+    flex:1;
+    border: 1px solid #ccc;
+    border-radius: 15px 0 0 15px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 15px
+}
+.search_button{
+    background-color: #2196F3;
+    padding: 10px;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+}
+.search_button img{
+    width: 25px;
+    height: 25px;
+}
+.search_button:hover{
+    background-color: #145a92;
+}
+.weather_icon{
+    width: 100px;
+    height: 100px;
+}
+.weather .temp{
+    font-size: 2.5em;
+    font-weight: 900;
+    margin:10px 0 ;
+}
+.city{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+}
+.details{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.column img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.parameter p{
+    color: #e2f524;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 5px 0;
+}
+.loading{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #fff;
+}
+.fiveday{
+    margin-top: 10px;
+}
+.fiveday h2{
+    text-align: center;
+    color: aliceblue;
+    margin: 0 10px;
+}
+.day-forecast{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.forecast-item{
+    width: 100px;
+    text-align: center ;
+    margin-bottom: 10px;
+}
+.forecast-item img{
+    width: 40px;
+    height: 40px;
+}
+.date{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #e2f524;
+}
+.temp{
+    margin-top: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #e2f524;
+}
+@media (max-width:576px) {
+    .cards{
+        padding: 10px;
+        margin:0 30px;
+        width: 100%;
+    }
+    .search{
+        height: 50px;
+        margin-bottom: 5px;
+    }
+    .weather_icon{
+        width: 90px;
+        height: 90px;
+    }
+    .temp{
+        font-size: 30px;
+    }
+    .city{
+        font-size: 15px;
+    }
+    .details{
+        flex-direction: column;
+        align-items: center;
+    }
+    .column img{
+        width: 40px;
+        height: 40px;
+        margin: 5px 0;
+        margin-bottom: 5px;
+    }
+    .parameter{
+        text-align: center;
+    }
+    .loading{
+        font-size: 20px;
+        margin: 20px 0;
+    }
+    .forecast-item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .date,.temp{
+        font-size: 15px;
+    }
+}

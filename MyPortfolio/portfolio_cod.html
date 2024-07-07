@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-...." crossorigin="anonymous" />
+
+</head>
+<body>
+    <header >
+        <nav>
+            <ul class="nav">
+                <li class="brand">Portfolio</li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="firstpage" id="Home">
+        <div class="left">
+            <div class="main">
+                <h2><i class="fa-regular fa-hand-wave"></i>Hello Everyone!</h2>
+                <h1>I'm AMAN VISHWAKARMA</h1>
+                <h1>Front-End Web Developer</h1>
+                <p>I'm a passionate and creative Front-End Developer with a strong foundation in HTML, CSS, and JavaScript. I'm actively exploring frameworks like React and AngularJS to expand my skillset.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="web-develop">
+                <img src="https://cdn-icons-png.flaticon.com/128/1688/1688400.png" alt="Web developer Icon">
+            </div>
+            <!-- Other content can go here -->
+        </div>
+    </div>
+    <section class="about-me" id="about">
+        <div class="content-container">
+            <div class="svg-container">
+                <img src="https://uxwing.com/wp-content/themes/uxwing/download/peoples-avatars/about-me-icon.png" alt="Not available">
+            </div>
+            <div class="description">
+                <h2>About Me</h2>
+                <p>I am a passionate engineering student currently pursuing my B.Tech degree at RIT, Sangli, Maharashtra. Technology has always fascinated me for its ability to solve real-life problems innovatively. Presently, I serve as the Marketing Coordinator at the Entrepreneurship Cell (E-Cell), a vibrant community at our campus dedicated to fostering entrepreneurial spirit.
+                    I believe in leveraging technology to create meaningful solutions that positively impact our world. Whether it's developing software applications, designing efficient systems, or exploring new technologies, I am driven by a deep-seated curiosity and a desire to make a difference through innovation.</p>
+            </div>
+        </div>
+    </section>
+    <section class="Projects" id="projects">
+        <h2>Recent Projects</h2>
+        <div class="project-container">
+            <div class="project-box">
+                <h3>Bird Feeder Guide</h3>
+                <p>Developed a simple and informative Bird Feeder Guide using HTML and CSS.The guide provides detailed information on different types of bird feeders,steps to make it by own and its importance, making it a valuable resource for bird enthusiasts. </p>
+                <button class="view-btn" onclick="openProjectInNewTab('https://github.com/vishnandaman?tab=repositories')">View<i class="fas fa-eye"></i></button>
+            </div>
+            <div class="project-box">
+                <h3>Weather Forecast Website</h3>
+                <p>Developed a web application that delivers real-time weather forecasts based on the user's location.The application displays current weather conditions including temperature, humidity, wind speed, and atmospheric pressure.</p>
+                <button class="view-btn" onclick="openProjectInNewTab('https://github.com/vishnandaman?tab=repositories')">View <i class="fas fa-eye"></i></button>
+            </div>
+            <div class="project-box">
+                <h3>E-commerce Website</h3>
+                <p>Developed an e-commerce platform allowing users to browse products, add them to a cart, and make purchases seamlessly.The platform is designed to offer a user-friendly interface and secure transaction process.</p>
+                <button class="view-btn" onclick="openProjectInNewTab('https://github.com/vishnandaman?tab=repositories')">View <i class="fas fa-eye"></i></button>
+            </div>
+        </div>
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <!--<div class="skill-logo">
+                <img src="https://img.icons8.com/?size=80&id=118624&format=png" alt="logo">
+            </div>-->
+            <div class="skill-box">
+                <i class="fab fa-html5 fa-3x"></i>
+                <h3>HTML</h3>
+                <progress value="9" max="10"></progress>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-css3-alt fa-3x"></i>
+                <h3>CSS</h3>
+                <progress value="7" max="10"></progress>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-js-square fa-3x"></i>
+                <h3>JavaScript</h3>
+                <progress value="6" max="10"></progress>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-react fa-3x"></i>
+                <h3>React(Learning)</h3>
+                <div class="bar">
+                <progress value="3" max="10"></progress>
+                </div>
+            </div>
+            <div class="skill-box">
+                <i class="fab fa-angular fa-3x"></i>
+                <h3>Angular(Learning)</h3>
+                <progress value="2" max="10"></progress>
+            </div>
+        </div>
+    </section>
+    <section class="contact-me" id="contact">
+        <div class="title">
+        <h2>Connect With Me!</h2>
+        </div>
+        <div class="contact-container">
+            <h5><i class="fas fa-envelope"></i>Email:anvishwakarma66@gmail.com</h5>
+            <h5><i class="fas fa-phone"></i>Phone:+1234567890</h5>
+        </div>
+            <div class="form">
+
+                <form action="#" method="POST" class="contact-info">
+                    <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="msg">Message:</label>
+                        <textarea name="msg" id="msg" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message:</button>
+                </form>
+            </div>
+            <section class="social-links">
+                <div class="social-container">
+                    <a href="www.linkedin.com/in/aman-vishwakarma-x018730" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin fa-3x"></i>
+                        LinkedIn
+                    </a>
+                    <a href="https://github.com/vishnandaman?tab=repositories" target="_blank" class="social-icon">
+                        <i class="fab fa-github fa-3x"></i>
+                        GitHub
+                    </a>
+                </div>
+            </section>
+    </section>
+    
+    <script>
+        function openProjectInNewTab(url){
+            window.open(url,'_blank');
+        }
+    </script>
+</body>
+</html>
